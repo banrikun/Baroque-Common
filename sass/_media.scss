@@ -1,0 +1,130 @@
+@media only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 240dpi),
+       only screen and (min-resolution: 2dppx),
+       only screen and (min-width: 1900px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: $main-wid) {
+    .tri,
+    .search,
+    .footer {
+        display: none;
+    }
+
+    #header {
+        background: $common-col;
+    }
+
+    #nav {
+        position: fixed;
+        top: $head-hig;
+        right: 0;
+
+        overflow: hidden;
+
+        width: auto;
+        height: 0;
+
+        transition: height .3s;
+        transform: translate3d(0,0,0);
+        text-align: center;
+
+        background: $head-bg;
+    }
+
+    #nav a {
+        line-height: 40px;
+
+        display: block;
+
+        height: 40px;
+        margin: 0 2rem;
+    }
+
+    .logo {
+        position: static;
+
+        float: none;
+
+        margin: 0 auto;
+
+        background: none;
+    }
+
+    #toggle {
+        position: absolute;
+        top: ($head-hig - 1.85rem)/2;
+        right: ($head-hig - 1.85rem)/2;
+
+        display: block;
+        overflow: hidden;
+
+        box-sizing: border-box;
+        width: 1.85rem;
+        height: 1.85rem;
+        padding: .15rem;
+    }
+
+    #toggle.show-btn {
+        background: rgba(255,255,255,.3);
+    }
+
+    #toggle span {
+        display: block;
+
+        height: .25rem;
+        margin: .2rem;
+
+        background: #fff;
+    }
+
+    .post {
+        padding: 2rem 1rem;
+    }
+
+    article {
+        .post-meta {
+            display: none;
+        }
+        .post-title {
+            padding: 0;
+
+            border: 0 none;
+        }
+    }
+
+    .no-meta {
+        margin-bottom: 1rem;
+    }
+
+    .post-content {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 1rem;
+
+            margin: 1rem 0 .5rem;
+        }
+    }
+
+    .text {
+        margin-right: 0;
+    }
+
+    .text,
+    #submit {
+        width: 100%;
+    }
+
+    .comment-parent > .comment-children {
+        padding-left: 0;
+    }
+}

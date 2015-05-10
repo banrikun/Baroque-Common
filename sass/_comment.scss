@@ -1,0 +1,158 @@
+#comments {
+    @include link($meta-col, $meta-col-h);
+    > .comment-list {
+        border-bottom: 1px dotted $meta-line-col;
+    }
+}
+
+.comment-list {
+    padding-left: 0;
+
+    list-style-type: none;
+}
+
+.avatar {
+    display: block;
+    float: left;
+
+    width: 40px;
+    height: 40px;
+    margin: 1.35rem 1rem 0 0;
+
+    border-radius: 3px;
+}
+
+.comment-main {
+    overflow: hidden;
+
+    padding: 1rem 0;
+
+    border-top: 1px dotted $meta-line-col;
+    p {
+        margin: 0;
+    }
+}
+
+.comment-meta,
+.cancel-comment-reply {
+    font-size: .875rem;
+
+    margin-top: .5rem;
+
+    color: $meta-col;
+}
+
+.cancel-comment-reply {
+    padding-bottom: 1rem;
+}
+
+.comment-author {
+    display: block;
+
+    height: 1.6rem;
+
+    color: $meta-col;
+    &:hover,
+    &:hover a,
+    a:hover {
+        color: $meta-col-h;
+    }
+}
+
+.comment-reply a {
+    &:before {
+        margin: 0 .5rem;
+
+        content: '\002f';
+
+        color: $meta-line-col;
+    }
+}
+
+.comment-parent > .comment-children {
+    margin-left: 1rem;
+    padding-left: 40px;
+}
+
+.page-navigator {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+    text-align: center;
+
+    color: $meta-col;
+    li {
+        display: inline-block;
+        float: none;
+
+        margin: .5rem;
+    }
+    a {
+        line-height: 1.4rem;
+
+        display: block;
+
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .current {
+        border-radius: 3px;
+        background: #aaa;
+        a {
+            color: #fff !important;
+        }
+    }
+}
+
+.respond {
+    margin-bottom: 1rem;
+}
+
+.text,
+.textarea,
+#submit {
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    padding: .5rem;
+
+    border: 1px solid $meta-line-col;
+    border-radius: 0;
+    outline: none;
+
+    -webkit-appearance: none;
+}
+
+.text,
+.textarea {
+    &:focus {
+        border-color: #aaa;
+    }
+}
+
+.text,
+#submit {
+    width: 33%;
+}
+
+.text:nth-child(-n+2) {
+    margin-right: .5%;
+}
+
+.textarea {
+    width: 100%;
+    height: 10rem;
+
+    resize: none;
+}
+
+#submit {
+    color: #fff;
+    border: 0;
+    background: $content-link;
+    &:hover {
+        color: #fff;
+        background: $content-link-h;
+    }
+}
