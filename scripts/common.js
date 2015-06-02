@@ -78,7 +78,7 @@ function form() {
     var form = document.getElementById('comment-form');
 
     if (form) {
-        var input = form.getElementsByTagName('input') || {},
+        var input = form.getElementsByTagName('input'),
             area = document.getElementById('textarea'),
             len = input.length,
             i;
