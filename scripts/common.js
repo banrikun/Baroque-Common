@@ -1,8 +1,3 @@
-window.onload = function() {
-    menu();
-    form();
-}
-
 var br = {
     //添加事件
     addEL: function(e, type, fun) {
@@ -56,8 +51,8 @@ var br = {
     }
 }
 
-//展示菜单
-function menu() {
+//切换菜单
+! function() {
     var btn = document.getElementById('toggle'),
         nav = document.getElementById('nav'),
         hei = nav.getElementsByTagName('a').length * 40;
@@ -71,10 +66,10 @@ function menu() {
             nav.style.height = hei + 'px';
         }
     })
-}
+}()
 
 //表单相关
-function form() {
+! function() {
     var form = document.getElementById('comment-form');
 
     if (form) {
@@ -90,9 +85,8 @@ function form() {
                 br.setVal(input[i], pla);
             }
             br.hideHd(input[i]);
-            br.prsKey(input[i]);
         }
         br.hideHd(area);
-        br.prsKey(area);
+        br.prsKey(form);
     }
-}
+}()
