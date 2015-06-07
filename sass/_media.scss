@@ -43,7 +43,8 @@
         display: block;
 
         height: 40px;
-        margin: 0 2rem;
+        margin: 0;
+        padding: 0 2rem;
     }
 
     .logo {
@@ -116,7 +117,7 @@
     }
 
     .text {
-        margin-right: 0;
+        margin-left: 0;
     }
 
     .text,

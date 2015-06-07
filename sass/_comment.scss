@@ -136,8 +136,8 @@
     width: 33%;
 }
 
-.text:nth-child(-n+2) {
-    margin-right: .5%;
+.text + .text {
+    margin-left: .5%;
 }
 
 .textarea {
