@@ -9,7 +9,7 @@
     }
 }
 
-@media only screen and (max-width: $main-wid) {
+@media only screen and (max-width: 1024px) {
     .tri,
     .search,
     .footer {
@@ -114,12 +114,14 @@
         }
     }
 
-    .text {
+    #comment-form .text,
+    .protected .submit {
         margin-left: 0;
     }
 
     .text,
-    #submit {
+    .submit,
+    .protected .submit {
         width: 100%;
     }
 

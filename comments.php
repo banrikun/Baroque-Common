@@ -57,7 +57,7 @@ if ($comments->levels > 0) {
                         <textarea name="text" id="textarea" class="textarea" placeholder="<?php _e('试试用 Ctrl/Cmd+Enter 提交吧？'); ?>" required ><?php $this->remember('text'); ?></textarea>
                     </div>
                     <div>
-                        <button type="submit" id="submit"><?php _e('提交评论'); ?></button>
+                        <button class="submit" type="submit" id="submit"><?php _e('提交评论'); ?></button>
                     </div>
                 </form>
             </div>

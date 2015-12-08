@@ -64,6 +64,20 @@
     }
 }
 
+.protected {
+    p {
+        @extend .clearfix;
+    }
+    .text,
+    .submit {
+        float: left;
+    }
+    .submit {
+        width: 11%;
+        margin-left: .5%;
+    }
+}
+
 .more {
     font-weight: 700;
 
